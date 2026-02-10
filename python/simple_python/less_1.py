@@ -37,3 +37,45 @@ print(stooge, "says:", quotes[stooge])
 
 print(type(7))
 print(isinstance(7,int))
+
+a = 7
+b = a
+
+print(type(a))
+print(type(b))
+print(type(58))
+print(type(99.9))
+print(type('abc'))
+
+# Assigment
+
+x = 5
+print("X assigment 5")
+print(x)
+y = x
+print("X assigmnet Y")
+print(y)
+x = 29
+print("X assigment 29")
+print(x)
+print("Y value")
+print(y)
+
+# Exercises
+
+# 1
+
+prince = 99
+print(prince)
+
+# 2
+
+print(type(5))
+
+# 3
+
+print(type(2.0))
+
+# 4
+
+print(type(5+2.0))
