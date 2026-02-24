@@ -52,3 +52,41 @@ print(int(12345))
 
 googol = 10**100
 print(googol*googol)
+
+# The float numbers 
+
+print(float(True))
+print(float(False))
+print(float(98))
+print(float('99'))
+print(float('98.6'))
+print(float('-1.5'))
+print(float('1.e04'))
+print(False+0)
+print(False+0.)
+print(True+0)
+print(True+0.)
+
+# Execrcises
+
+print("How seconds in 1 hour?")
+print(60*60)
+
+seconds_per_hour = 60*60
+
+print("seconds_per_hour = 60*60")
+print(seconds_per_hour)
+
+seconds_per_day = seconds_per_hour * 24
+
+print("seconds_per_day")
+print(seconds_per_day)
+
+print("(day) / & // (hour)")
+
+division = seconds_per_day / seconds_per_hour
+print(division)
+
+division_w = seconds_per_day // seconds_per_hour
+print(division_w)
+
