@@ -60,3 +60,35 @@ t = x == 5
 print(t)
 z = 5 < x
 print(z)
+
+if 5 < x and x < 10:
+    print("(5<x and x<10) The X = ", x)
+
+r = 11
+
+if 5 < r or r < 10:
+    print("(5<r or r>10) The R = ", r)
+
+if 5 < x and x > 10:
+    print("(5<x and x>10) The X = ", x)
+
+# if 5 < x not and x > 10:
+#     print("(5<x andnot x>10) The X = ", x)
+
+some_list = []
+if some_list:
+    print("There`s something in here")
+else:
+    print("Hey, it`s empty")
+
+letter = 'o'
+if letter == 'a' or letter == 'e' or letter == 'i'\
+or letter == 'o' or letter == 'u':
+    print(letter,'is a vowel')
+else:
+    print(letter, 'is not a vowel')
+
+vowels = 'aeiou'
+letter in vowels
+if letter in vowels:
+    print(letter, 'is a vowel')
