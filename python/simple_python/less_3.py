@@ -92,3 +92,9 @@ vowels = 'aeiou'
 letter in vowels
 if letter in vowels:
     print(letter, 'is a vowel')
+
+letter = 'o'
+vowel_set = {'a','e','i','o','u'}
+letter in vowel_set
+vowel_list = ['a','e','i','o','u']
+letter in vowel_list
