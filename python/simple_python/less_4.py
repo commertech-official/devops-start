@@ -39,3 +39,41 @@ info
 
 poem = r'''Boys and girls, come out to play. The moon doth shine as bright as day.'''
 print(poem)
+
+# United strings with symbol "+"
+
+a_1 = 'Duck.'
+b_1 = a_1
+c_1 = 'Grey Duck!'
+
+print(a_1, b_1, c_1)
+print(a_1,b_1,c_1)
+
+# We multiply strings using the * symbol
+
+start_1 = 'Na'*4+'\n'
+middle_1 = 'Hey'*3+'\n'
+end_1 = 'Goodbye.'
+
+print(start_1 + start_1 + middle_1 + end_1)
+
+# Extract sybmols with []
+
+# If you specify an offset equal to or greater than the length of the string (remember, offsets go from 0 to length – 1), an exception will be generated:
+
+letter_1 = '1234567890'
+print(letter_1[2], letter_1[4], letter_1[6], letter_1[-1])
+
+# Extracting substrings using splitting
+
+print(letter_1[:])
+print(letter_1[9:])
+print(letter_1[1:4])
+print(letter_1[-3:])
+print(letter_1[3:-1])
+print(letter_1[::2])
+print(letter_1[1:8:2])
+print(len(letter_1))
+
+tasks_2 = 'get gloves,get mask,give cat vitamins,call ambulance'
+print(tasks_2.split(','))
