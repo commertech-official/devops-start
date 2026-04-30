@@ -1,0 +1,80 @@
+# Work with quotation marks
+
+# Usage various types of quotation marks
+
+print('Usage various types of quotation marks')
+print('Give',"us",'''some''',"""space""")
+
+# Creating strings using the function str()
+
+print('result str(98,6) =', str(98.6))
+print('result str(1.0e4) =', str(1.0e4))
+print('result str(True) =', str(True))
+
+# Creating strings with \n
+
+print("'Guten Morgen, mein Herr!'\nsaid mad king Ludwig to his wig.")
+
+# Escape sequences
+
+palindrome = 'A man,\nA plan,\nA canal,\nPanama'
+print(palindrome)
+
+print('\tabc')
+print('a\tbc')
+print('ab\tc')
+print('abc\t')
+
+testimony = "\"I did nothing!\" he said. \"Or that other thing.\""
+print(testimony)
+
+fact = "The world's largest rubber duck was 54'2\" by 65'7\" by 105'"
+print(fact)
+
+speech = 'The backslash (\\) bends over backwards to please you.'
+print(speech)
+
+info = r'Type a \n to get a new line in a normal string'
+info
+
+poem = r'''Boys and girls, come out to play. The moon doth shine as bright as day.'''
+print(poem)
+
+# United strings with symbol "+"
+
+a_1 = 'Duck.'
+b_1 = a_1
+c_1 = 'Grey Duck!'
+
+print(a_1, b_1, c_1)
+print(a_1,b_1,c_1)
+
+# We multiply strings using the * symbol
+
+start_1 = 'Na'*4+'\n'
+middle_1 = 'Hey'*3+'\n'
+end_1 = 'Goodbye.'
+
+print(start_1 + start_1 + middle_1 + end_1)
+
+# Extract sybmols with []
+
+# If you specify an offset equal to or greater than the length of the string (remember, offsets go from 0 to length – 1), an exception will be generated:
+
+letter_1 = '1234567890'
+print(letter_1[2], letter_1[4], letter_1[6], letter_1[-1])
+
+# Extracting substrings using splitting
+
+print(letter_1[:])
+print(letter_1[9:])
+print(letter_1[1:4])
+print(letter_1[-3:])
+print(letter_1[3:-1])
+print(letter_1[::2])
+print(letter_1[1:8:2])
+print(len(letter_1))
+
+tasks_2 = 'get gloves,get mask,give cat vitamins,call ambulance'
+print(tasks_2.split(','))
+
