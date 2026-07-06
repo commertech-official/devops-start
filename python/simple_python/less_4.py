@@ -385,3 +385,72 @@ print(song.replace(' m',' M'))
 # or
 
 print(song.replace('moray','Moray'))
+
+# 5.1
+song = """When an eel grabs your arm,
+And it causes great harm,
+That's - a moray!"""
+print(song.replace('moray', 'Moray'))
+
+# 5.2
+questions = [
+    "We don't serve strings around here. Are you a string?",
+    "What is said on Father's Day in the forest?",
+    "What makes the sound 'Sis! Boom! Bah!'?"
+]
+answers = [
+    "An exploding sheep.",
+    "No, I'm a frayed knot.",
+    "'Pop!' goes the weasel."
+]
+for q, a in zip(questions, answers):
+    print(f"Q: {q}\nA: {a}\n")
+
+# 5.3
+print("My kitty cat likes %s,\nMy kitty cat likes %s,\nMy kitty cat fell on his %s\nAnd now thinks he's a %s." % ('roastbeef', 'ham', 'head', 'clam'))
+
+# 5.4-5.5
+letter = """Dear {salutation} {name},
+
+Thank you for your letter. We are sorry that our {product}
+{verbed} in your {room}. Please note that it should never
+be used in a {room}, especially near any {animals}.
+
+Send us your receipt and {amount} for shipping and handling.
+We will send you another {product} that, in our tests,
+is {percent}% less likely to have {verbed}.
+
+Thank you for your support.
+
+Sincerely,
+{spokesman}
+{job_title}"""
+
+print(letter.format(
+    salutation="Mr.",
+    name="Johnson",
+    product="toaster",
+    verbed="exploded",
+    room="kitchen",
+    animals="cats",
+    amount="$15.00",
+    percent=99,
+    spokesman="John Smith",
+    job_title="Customer Service Manager"
+))
+
+# 5.6-5.8
+animals = ['duck', 'pumpkin', 'spitz']
+names = ['Boaty McBoatface', 'Horsey McHorseface', 'Trainy McTrainface']
+
+print("\n--- Стиль % ---")
+for animal, name in zip(animals, names):
+    print("%s: %s" % (animal, name))
+
+print("\n--- Стиль .format() ---")
+for animal, name in zip(animals, names):
+    print("{}: {}".format(animal, name))
+
+print("\n--- Стиль f-строк ---")
+for animal, name in zip(animals, names):
+    print(f"{animal}: {name}")
