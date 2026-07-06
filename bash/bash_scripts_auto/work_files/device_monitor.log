@@ -1,0 +1,7 @@
+Power Button                       | kbd event0               | 0000           | 0001          
+Sleep Button                       | kbd event1               | 0000           | 0003          
+AT Translated Set 2 keyboard       | sysrq kbd event2 leds    | 0001           | 0001          
+Video Bus                          | kbd event3               | 0000           | 0006          
+ImExPS/2 Generic Explorer Mouse    | mouse0 event4            | 0002           | 0006          
+VirtualBox USB Tablet              | mouse1 event5 js0        | 80ee           | 0021          
+VirtualBox mouse integration       | mouse2 event6 js1        | 80ee           | cafe          

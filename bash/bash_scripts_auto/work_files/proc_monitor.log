@@ -1,0 +1,131 @@
+-----------------------------
+Start: 2026-06-23 16:49:59
+New processes:
+PID      | NAME                      | STATUS          | CMDLINE                             | CWD                       | FD   
+1        | systemd                   | VmRSS:	   15012 kB | init splash                         | /                         | 245  
+1067     | ModemManager              | VmRSS:	   13040 kB | ModemManager                        | /                         | 11   
+1435     | VBoxDRMClient             | VmRSS:	    2908 kB | VBoxDRMClient                       | /                         | 8    
+1438     | VBoxService               | VmRSS:	    4192 kB | vboxadd-service.sh                  | /                         | 6    
+1458     | cupsd                     | VmRSS:	   12572 kB | cupsd -l                            | /                         | 11   
+1459     | python3.12                | VmRSS:	   40720 kB | glances -s -B 127.0.0.1             | /                         | 5    
+1471     | python3.12                | VmRSS:	   23564 kB | unattended-upgrade-shutdown --wait- | /                         | 10   
+1501     | gdm3                      | VmRSS:	    9592 kB | gdm3                                | /                         | 15   
+1559     | apache2                   | VmRSS:	   19544 kB | apache2 -k start                    | /                         | 9    
+1581     | mariadbd                  | VmRSS:	  141136 kB | mariadbd                            | /var/lib/mysql            | 96   
+1583     | cups-browsed              | VmRSS:	   20380 kB | cups-browsed                        | /                         | 9    
+1585     | snmpd                     | VmRSS:	   13184 kB | snmpd -LOw -u Debian-snmp -g Debian | /                         | 9    
+1587     | kerneloops                | VmRSS:	    2400 kB | kerneloops --test                   | /                         | 5    
+1593     | kerneloops                | VmRSS:	    2348 kB | kerneloops                          | /                         | 5    
+1664     | rtkit-daemon              | VmRSS:	    3552 kB | rtkit-daemon                        | /proc                     | 7    
+1815     | colord                    | VmRSS:	   15000 kB | colord                              | /                         | 16   
+1859     | upowerd                   | VmRSS:	    9356 kB | upowerd                             | /                         | 10   
+2202     | gdm-session-worker        | VmRSS:	   10908 kB | gdm-password]                       | /                         | 11   
+2208     | apache2                   | VmRSS:	    9764 kB | apache2 -k start                    | /                         | 10   
+2209     | apache2                   | VmRSS:	    9764 kB | apache2 -k start                    | /                         | 10   
+2210     | apache2                   | VmRSS:	    9764 kB | apache2 -k start                    | /                         | 10   
+2211     | apache2                   | VmRSS:	    9764 kB | apache2 -k start                    | /                         | 10   
+2212     | apache2                   | VmRSS:	    9764 kB | apache2 -k start                    | /                         | 10   
+2220     | systemd                   | VmRSS:	   12868 kB | systemd --user                      | /                         | 134  
+2224     | systemd-executor          | VmRSS:	    3652 kB | (sd-pam)                            | /                         | 7    
+2239     | pipewire                  | VmRSS:	   15352 kB | pipewire                            | /home/aleshkin_da         | 57   
+2240     | pipewire                  | VmRSS:	    6220 kB | pipewire -c filter-chain.conf       | /home/aleshkin_da         | 17   
+2242     | wireplumber               | VmRSS:	   19300 kB | wireplumber                         | /home/aleshkin_da         | 37   
+2244     | pipewire                  | VmRSS:	   14332 kB | pipewire-pulse                      | /home/aleshkin_da         | 31   
+2247     | gnome-keyring-daemon      | VmRSS:	   10492 kB | keyring                             | /home/aleshkin_da         | 13   
+2257     | dbus-daemon               | VmRSS:	    6784 kB | dbus-daemon --session --address=sys | /home/aleshkin_da         | 91   
+2288     | xdg-document-portal       | VmRSS:	    7760 kB | xdg-document-portal                 | /home/aleshkin_da         | 15   
+2300     | gdm-wayland-session       | VmRSS:	    6380 kB | gnome-session --session=ubuntu      | /home/aleshkin_da         | 9    
+2301     | xdg-permission-store      | VmRSS:	    6356 kB | xdg-permission-store                | /home/aleshkin_da         | 7    
+2309     | gnome-session-binary      | VmRSS:	   17048 kB | gnome-session-binary --session=ubun | /home/aleshkin_da         | 8    
+2320     | fusermount3               | VmRSS:	    2100 kB | doc                                 | /                         | 5    
+2398     | gcr-ssh-agent             | VmRSS:	    7152 kB | gcr                                 | /home/aleshkin_da         | 6    
+2400     | gnome-session-ctl         | VmRSS:	    5916 kB | gnome-session-ctl --monitor         | /home/aleshkin_da         | 6    
+2418     | gvfsd                     | VmRSS:	    8356 kB | gvfsd                               | /home/aleshkin_da         | 10   
+2425     | gvfsd-fuse                | VmRSS:	    7496 kB | gvfs -f                             | /                         | 10   
+2428     | gnome-session-binary      | VmRSS:	   18756 kB | gnome-session-binary --systemd-serv | /home/aleshkin_da         | 21   
+2470     | at-spi-bus-launcher       | VmRSS:	    8004 kB | at-spi-bus-launcher --launch-immedi | /home/aleshkin_da         | 11   
+2471     | gnome-shell               | VmRSS:	  620080 kB | gnome-shell                         | /home/aleshkin_da         | 110  
+2489     | dbus-daemon               | VmRSS:	    5356 kB | bus                                 | /home/aleshkin_da         | 27   
+2544     | at-spi2-registryd         | VmRSS:	    7808 kB | at-spi2-registryd --use-gnome-sessi | /home/aleshkin_da         | 10   
+2559     | gnome-shell-calendar-server | VmRSS:	   17972 kB | gnome-shell-calendar-server         | /home/aleshkin_da         | 10   
+2570     | evolution-source-registry | VmRSS:	   43292 kB | evolution-source-registry           | /home/aleshkin_da         | 9    
+2573     | gjs-console               | VmRSS:	   27332 kB | org.gnome.Shell.Notifications       | /home/aleshkin_da         | 8    
+2580     | ibus-daemon               | VmRSS:	   12536 kB | ibus-daemon --panel disable         | /home/aleshkin_da         | 18   
+2587     | gsd-a11y-settings         | VmRSS:	    7024 kB | gsd-a11y-settings                   | /home/aleshkin_da         | 8    
+2589     | gsd-color                 | VmRSS:	   21160 kB | gsd-color                           | /home/aleshkin_da         | 14   
+2591     | gsd-datetime              | VmRSS:	   12688 kB | gsd-datetime                        | /home/aleshkin_da         | 8    
+2594     | gsd-housekeeping          | VmRSS:	    8280 kB | gsd-housekeeping                    | /home/aleshkin_da         | 12   
+2599     | gsd-keyboard              | VmRSS:	   20628 kB | gsd-keyboard                        | /home/aleshkin_da         | 14   
+2600     | gsd-media-keys            | VmRSS:	   26704 kB | gsd-media-keys                      | /home/aleshkin_da         | 20   
+2601     | gsd-power                 | VmRSS:	   25244 kB | gsd-power                           | /home/aleshkin_da         | 15   
+2602     | gsd-print-notifications   | VmRSS:	   12128 kB | gsd-print-notifications             | /home/aleshkin_da         | 9    
+2603     | gsd-rfkill                | VmRSS:	    7084 kB | gsd-rfkill                          | /home/aleshkin_da         | 10   
+2605     | gsd-screensaver-proxy     | VmRSS:	    6660 kB | gsd-screensaver-proxy               | /home/aleshkin_da         | 7    
+2606     | evolution-alarm-notify    | VmRSS:	   61372 kB | evolution-alarm-notify              | /home/aleshkin_da         | 16   
+2607     | gsd-sharing               | VmRSS:	   12408 kB | gsd-sharing                         | /home/aleshkin_da         | 9    
+2609     | gsd-smartcard             | VmRSS:	    8552 kB | gsd-smartcard                       | /home/aleshkin_da         | 8    
+2611     | gsd-sound                 | VmRSS:	   10156 kB | gsd-sound                           | /home/aleshkin_da         | 9    
+2617     | gsd-wacom                 | VmRSS:	   21472 kB | gsd-wacom                           | /home/aleshkin_da         | 13   
+2642     | gsd-disk-utility-notify   | VmRSS:	    7788 kB | gsd-disk-utility-notify             | /home/aleshkin_da         | 8    
+2657     | Xwayland                  | VmRSS:	   69000 kB | .mutter-Xwaylandauth.PCDFR3 -listen | /home/aleshkin_da         | 13   
+2756     | ibus-dconf                | VmRSS:	    7620 kB | ibus-dconf                          | /home/aleshkin_da         | 11   
+2760     | ibus-extension-gtk3       | VmRSS:	   30492 kB | ibus-extension-gtk3                 | /home/aleshkin_da         | 15   
+2765     | ibus-portal               | VmRSS:	    7572 kB | ibus-portal                         | /home/aleshkin_da         | 9    
+2787     | gvfs-udisks2-volume-monitor | VmRSS:	   11768 kB | gvfs-udisks2-volume-monitor         | /home/aleshkin_da         | 14   
+2807     | goa-daemon                | VmRSS:	   24980 kB | goa-daemon                          | /home/aleshkin_da         | 12   
+2820     | goa-identity-service      | VmRSS:	    9724 kB | goa-identity-service                | /home/aleshkin_da         | 8    
+2826     | evolution-calendar-factory | VmRSS:	   25276 kB | evolution-calendar-factory          | /home/aleshkin_da         | 13   
+2832     | gvfs-mtp-volume-monitor   | VmRSS:	    6852 kB | gvfs-mtp-volume-monitor             | /home/aleshkin_da         | 8    
+2841     | evolution-addressbook-factory | VmRSS:	   30732 kB | evolution-addressbook-factory       | /home/aleshkin_da         | 13   
+2846     | gvfs-gphoto2-volume-monitor | VmRSS:	    7372 kB | gvfs-gphoto2-volume-monitor         | /home/aleshkin_da         | 8    
+2857     | gvfs-goa-volume-monitor   | VmRSS:	    6904 kB | gvfs-goa-volume-monitor             | /home/aleshkin_da         | 7    
+2864     | gvfs-afc-volume-monitor   | VmRSS:	    8444 kB | gvfs-afc-volume-monitor             | /home/aleshkin_da         | 8    
+2876     | gsd-printer               | VmRSS:	   15644 kB | gsd-printer                         | /home/aleshkin_da         | 8    
+2902     | ibus-engine-simple        | VmRSS:	    7852 kB | ibus-engine-simple                  | /home/aleshkin_da         | 9    
+2925     | dconf-service             | VmRSS:	    6068 kB | dconf-service                       | /home/aleshkin_da         | 7    
+2935     | gvfsd-metadata            | VmRSS:	    6852 kB | gvfsd-metadata                      | /home/aleshkin_da         | 10   
+2936     | gvfsd-trash               | VmRSS:	    9544 kB | 0                                   | /home/aleshkin_da         | 14   
+2954     | gsd-xsettings             | VmRSS:	   84880 kB | gsd-xsettings                       | /home/aleshkin_da         | 15   
+2978     | gjs-console               | VmRSS:	   63644 kB | app                                 | /home/aleshkin_da         | 17   
+3047     | ibus-x11                  | VmRSS:	   25260 kB | ibus-x11                            | /home/aleshkin_da         | 13   
+3061     | tracker-miner-fs-3        | VmRSS:	   30120 kB | tracker-miner-fs-3                  | /home/aleshkin_da         | 53   
+3063     | gjs-console               | VmRSS:	   27372 kB | org.gnome.ScreenSaver               | /home/aleshkin_da         | 8    
+3066     | xdg-desktop-portal        | VmRSS:	   14860 kB | xdg-desktop-portal                  | /home/aleshkin_da         | 22   
+3068     | mutter-x11-frames         | VmRSS:	  104544 kB | mutter-x11-frames                   | /home/aleshkin_da         | 10   
+3076     | VBoxClient                | VmRSS:	    1600 kB | VBoxClient --clipboard              | /                         | 5    
+3077     | VBoxClient                | VmRSS:	    4556 kB | VBoxClient --clipboard              | /                         | 10   
+3111     | VBoxClient                | VmRSS:	    1596 kB | VBoxClient --vmsvga-session         | /                         | 5    
+3113     | VBoxClient                | VmRSS:	    2524 kB | VBoxClient --vmsvga-session         | /                         | 7    
+3117     | xdg-desktop-portal-gnome  | VmRSS:	   42320 kB | xdg-desktop-portal-gnome            | /home/aleshkin_da         | 12   
+3155     | xdg-desktop-portal-gtk    | VmRSS:	   26860 kB | xdg-desktop-portal-gtk              | /home/aleshkin_da         | 15   
+3189     | python3.12                | VmRSS:	   19412 kB | gnome-terminal --wait               | /home/aleshkin_da         | 4    
+3191     | gnome-terminal.real       | VmRSS:	   29616 kB | gnome-terminal.real --wait          | /home/aleshkin_da         | 13   
+3197     | gnome-terminal-server     | VmRSS:	   59456 kB | gnome-terminal-server               | /home/aleshkin_da         | 22   
+3204     | bash                      | VmRSS:	    5828 kB | bash                                | /home/aleshkin_da/devops_ | 4    
+3210     | user-session-helper       | VmRSS:	    6456 kB | snapd-desktop-integration           | /var/snap/snapd-desktop-i | 7    
+3269     | snapd-desktop-integration | VmRSS:	   36596 kB | snapd-desktop-integration           | /var/snap/snapd-desktop-i | 12   
+328      | systemd-journald          | VmRSS:	   19076 kB | systemd-journald                    | /                         | 117  
+3296     | bash                      | VmRSS:	    5964 kB | bash                                | /home/aleshkin_da/devops_ | 4    
+3390     | update-notifier           | VmRSS:	   27252 kB | update-notifier                     | /home/aleshkin_da         | 15   
+410      | udevadm                   | VmRSS:	    8936 kB | systemd-udevd                       | /                         | 15   
+571      | systemd-oomd              | VmRSS:	    7768 kB | systemd-oomd                        | /                         | 12   
+582      | systemd-resolved          | VmRSS:	   13656 kB | systemd-resolved                    | /                         | 21   
+6345     | sudo                      | VmRSS:	    7700 kB | sudo bash proc_monitor.sh           | /home/aleshkin_da/devops_ | 11   
+6346     | sudo                      | VmRSS:	    2676 kB | sudo bash proc_monitor.sh           | /home/aleshkin_da/devops_ | 12   
+6347     | bash                      | VmRSS:	    3928 kB | bash proc_monitor.sh                | /home/aleshkin_da/devops_ | 5    
+826      | avahi-daemon              | VmRSS:	    4692 kB | avahi-daemon: running [netology.loc | /etc/avahi                | 17   
+827      | dbus-daemon               | VmRSS:	    7352 kB | @dbus-daemon --system --address=sys | /                         | 68   
+831      | gnome-remote-desktop-daemon | VmRSS:	   16816 kB | gnome-remote-desktop-daemon --syste | /                         | 9    
+841      | polkitd                   | VmRSS:	   11440 kB | polkitd --no-debug                  | /                         | 10   
+848      | power-profiles-daemon     | VmRSS:	    7756 kB | power-profiles-daemon               | /                         | 8    
+859      | snapd                     | VmRSS:	   39484 kB | snapd                               | /                         | 14   
+863      | accounts-daemon           | VmRSS:	    8208 kB | accounts-daemon                     | /                         | 8    
+865      | cron                      | VmRSS:	    2960 kB | cron -f -P                          | /var/spool/cron           | 5    
+877      | switcheroo-control        | VmRSS:	    7140 kB | switcheroo-control                  | /                         | 8    
+898      | systemd-logind            | VmRSS:	    9208 kB | systemd-logind                      | /                         | 47   
+904      | udisksd                   | VmRSS:	   15264 kB | udisksd                             | /                         | 18   
+928      | rsyslogd                  | VmRSS:	    6344 kB | rsyslogd -n -iNONE                  | /                         | 10   
+943      | avahi-daemon              | VmRSS:	    1508 kB | avahi-daemon: chroot helper         | /                         | 6    
+947      | NetworkManager            | VmRSS:	   20584 kB | NetworkManager --no-daemon          | /                         | 40   
+948      | wpa_supplicant            | VmRSS:	    6756 kB | wpa_supplicant GROUP=netdev         | /                         | 5    
+998      | atopacctd                 | VmRSS:	    1424 kB | atopacctd                           | /tmp                      | 6    
