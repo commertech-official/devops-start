@@ -1,0 +1,11 @@
+groups:
+  - name: example
+    rules:
+      - alert: HighValueAlert
+        expr: aleshkin_da_metric > 4
+        for: 5s
+        labels:
+          severity: warning
+        annotations:
+          summary: "High value detected"
+          description: "Metric aleshkin_da_metric is above threshold"
