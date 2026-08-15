@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Базовый слой
+bases:
+  - ../../base
+
+# Переопределение replicas для разработки
+replicas:
+  - name: nginx-deployment
+    count: 1
+
+# Добавление суффикса к именам
+nameSuffix: -dev
+
+# Добавление namespace
+namespace: dev
+
+# Добавление общих labels
+commonLabels:
+  environment: dev
+  version: "1.0-dev"
+
+# Патчи для изменения образа
+images:
+  - name: nginx
+    newTag: 1.14.2
