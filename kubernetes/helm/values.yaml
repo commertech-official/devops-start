@@ -1,0 +1,17 @@
+appName: "example"
+label: "netology"
+
+image:
+  repository: nginx
+  tag: "1.21"
+  pullPolicy: IfNotPresent
+
+config:
+  key1: value1
+  key2: value2
+  key3: value3
+
+features:
+  enabled: true
+  feature1: true
+  feature2: false

@@ -1,0 +1,20 @@
+apiVersion: v2
+kind: ConfigMap
+metadta:
+  name: {{ .Values.appName }}-config
+  lables: {{ .Values.label }}
+data:
+
+  #2. Вложенные значения
+  image_repo: {{ .Values.image.repository }}
+  image_tag: {{ .Values.image.tag }}
+
+  #3. Циклы по словарю
+  {{- range $key, $value := .Values.config }}
+  {{ $key }}: {{ $value }}
+  {{- end }}
+
+  #4. Условные добавления
+  {{- if .Values.features.enabled}}
+  features_enabled: "true"
+  {{- end }}
