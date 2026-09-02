@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+
+  - name: Ensure that vin editor installed.
+    apt:
+      name: vim
+      state: present
+  
+  - name:
+    debug:
+      msg: "{{ ansible_facts.all_ipv4_adresses }}"
+
+  handlers:
+  - name: Restart sshd
+    service:
+      name: sshd
+      state: restarted 
