@@ -1,0 +1,104 @@
+---
+- name: Task 1 - Archive download (WordPress), Tuned installation, MOTD change
+  hosts: my
+  become: yes
+  gather_facts: yes
+
+  vars:
+    motd_message: "Welcome to Ansible Managed Server! Have a productive day!"
+    wordpress_url: "https://wordpress.org/latest.tar.gz"
+    extract_dir: "/opt/wordpress"
+
+  tasks:
+    # 1. Скачать архив WordPress, создать папку и распаковать
+    - name: Create directory for WordPress
+      file:
+        path: "{{ extract_dir }}"
+        state: directory
+        mode: '0755'
+
+    - name: Download WordPress archive
+      get_url:
+        url: "{{ wordpress_url }}"
+        dest: "{{ extract_dir }}/wordpress.tar.gz"
+        timeout: 120
+        validate_certs: no
+      register: download_result
+
+    - name: Extract WordPress archive
+      unarchive:
+        src: "{{ extract_dir }}/wordpress.tar.gz"
+        dest: "{{ extract_dir }}"
+        remote_src: yes
+        extra_opts: [--strip-components=1]
+        creates: "{{ extract_dir }}/wp-admin"
+      when: download_result is success
+
+    - name: Clean up archive file
+      file:
+        path: "{{ extract_dir }}/wordpress.tar.gz"
+        state: absent
+
+    - name: Verify WordPress installation
+      stat:
+        path: "{{ extract_dir }}/wp-admin"
+      register: wp_check
+
+    - name: Display WordPress installation status
+      debug:
+        msg: "WordPress successfully installed to {{ extract_dir }}"
+      when: wp_check.stat.exists
+
+    # 2. Установить tuned и добавить в автозагрузку
+    - name: Install tuned package
+      apt:
+        name: tuned
+        state: present
+        update_cache: yes
+
+    - name: Start and enable tuned service
+      systemd:
+        name: tuned
+        state: started
+        enabled: yes
+
+    # 3. Изменить MOTD
+    - name: Create custom MOTD
+      copy:
+        content: |
+          {{ motd_message }}
+          System: {{ ansible_facts.distribution }} {{ ansible_facts.distribution_version }}
+          Hostname: {{ ansible_facts.hostname }}
+          IP Address: {{ ansible_facts.default_ipv4.address }}
+          WordPress installed: {{ extract_dir }}
+        dest: /etc/motd
+        mode: '0644'
+
+    - name: Backup original issue file
+      copy:
+        src: /etc/issue
+        dest: /etc/issue.bak
+        remote_src: yes
+        force: no
+
+    - name: Update /etc/issue with custom message
+      copy:
+        content: |
+          {{ motd_message }}
+          \n \l
+        dest: /etc/issue
+        mode: '0644'
+
+    - name: Enable PrintMotd in sshd config
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PrintMotd'
+        line: 'PrintMotd yes'
+        state: present
+      notify: restart sshd
+
+  handlers:
+    - name: restart sshd
+      systemd:
+        name: sshd
+        state: restarted

@@ -1,0 +1,7 @@
+---
+- name: PLAY MY
+  hosts: my
+  become: yes
+  roles:
+    - myrole1
+    - gortc.nginx

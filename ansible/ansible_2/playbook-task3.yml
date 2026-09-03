@@ -1,0 +1,8 @@
+---
+- name: Task 3 - Deploy Apache web server with system info
+  hosts: my
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - webserver

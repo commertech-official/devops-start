@@ -1,0 +1,5 @@
+---
+# vars file for webserver
+apache_service: apache2
+apache_user: www-data
+apache_group: www-data

@@ -1,0 +1,45 @@
+---
+# tasks file for webserver
+
+- name: Install Apache2 web server
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Ensure Apache2 is running and enabled
+  systemd:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Create index.html from template
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    mode: '0644'
+    owner: www-data
+    group: www-data
+  notify: restart apache
+
+- name: Allow port 80 in UFW (if using Ubuntu)
+  ufw:
+    rule: allow
+    port: '80'
+    proto: tcp
+  when: ansible_facts.os_family == "Debian"
+  ignore_errors: yes
+
+- name: Verify web server is accessible (200 OK)
+  uri:
+    url: "http://{{ ansible_facts.default_ipv4.address }}"
+    status_code: 200
+    timeout: 5
+  register: web_check
+  retries: 5
+  delay: 2
+  until: web_check.status == 200
+
+- name: Display web server status
+  debug:
+    msg: "Web server is accessible at http://{{ ansible_facts.default_ipv4.address }}"
