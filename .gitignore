@@ -1,15 +1,21 @@
 vagrant.deb
 
-## Local .terraform directories and files
+##_local_.terraform_directories_and_files
 
 **/.terraform/*
 .terraform*
 
 !.terraformrc
 
-# .tfstate files
+#__.tfstate_files
 
 *.tfstate
 *.tfstate.*
 
 terraform.tfvars
+
+##_local_auth_keys
+
+#__yandex_service
+
+authorized_key.json
