@@ -19,3 +19,7 @@ terraform.tfvars
 #__yandex_service
 
 authorized_key.json
+
+#__ai_agents
+
+.vscode
