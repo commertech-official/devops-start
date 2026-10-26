@@ -166,3 +166,67 @@ def f_8():
     x_8 += 1
     print(x_8)
 f_8()
+
+#__homework
+
+#__task_1_number_func
+#__функция принимает число в качестве ввода, возводит её в квадрат и возвращает:
+
+def sqr_1 ():
+    l_1 = input("input_nubmber: ")
+    l_1 = int(l_1)
+    l_1 *= l_1
+    print(l_1)
+
+print(sqr_1())
+
+def sqr_2 (num):
+    return num ** 2
+
+n_n = int(input("input_number_2:"))
+print(sqr_2(n_n))
+
+#__task_2_string_func
+#__функция троку в качестве аргумента и возвращает его:
+
+def str_1 (str):
+    return str
+
+n_t = str(input("input_string:"))
+print(str_1(n_t))
+
+#__task_3_param
+#__функция которая принимает 2 обазятельных и 3 необязательных аргумента:
+
+def param_1 (di, le, ma=3, ze=5, je=7):
+    return di + le + ma + ze + je
+
+print(param_1(2, 4))
+
+#__task_4_two_func
+#__функция принимающая целое число и возвращает результат от деления этого числа на 2, следующая функция берет это число  и умножает его на 4:
+
+def func_num_del_2 (num_1):
+    return num_1 / 2
+
+ser = int(input("input_number_del_2:"))
+next_cycle = func_num_del_2(ser)
+
+def func_num_umn_4 (num_2):
+    return num_2 * 4
+
+next_cycle_2 = func_num_umn_4(next_cycle)
+print(next_cycle_2)
+
+#__task_5_float_trans
+#__функция преобразующая строку в вещественое число с обработкой исключений:
+
+def trans_float (str_float):
+    try:
+      return float(str_float)
+    except ValueError:
+      print("its not number")
+      return None
+
+ser_x = str(input("input_number_trans_float:"))
+print(trans_float(ser_x))
