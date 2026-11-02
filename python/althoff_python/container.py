@@ -10,7 +10,7 @@ else:
     print("not correct, try please!")
 
 #__tuples
-#__python_ex130
+#__python_ex131
 
 rndm = ("M.Jackson",1958,True)
 print(rndm)
