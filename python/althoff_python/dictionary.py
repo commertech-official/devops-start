@@ -63,3 +63,72 @@ if n in rhymes:
     print(rhyme)
 else:
     print("not found")
+
+#__python_ex147
+#__program_dict
+
+lists = []
+rap = ["Basta",
+       "Crafc",
+       "Zloy duh",
+       "25-17"]
+
+rock = ["Amatory",
+       "Kino",
+       "Aria"]
+
+djs = ["Paul Oakenfold",
+       "Tiesto"]
+
+lists.append(rap)
+lists.append(rock)
+lists.append(djs)
+
+print(lists)
+
+rap = lists[0]
+print(rap)
+
+rap = lists[0]
+rap.append("Nashe delo")
+print(rap)
+print(lists)
+
+#__python_ex150
+#__program_dict
+
+locations = []
+
+tula = (54.1960, 37.6182)
+moscow = (55.7522, 37.6155)
+
+locations.append(tula)
+locations.append(moscow)
+
+print(locations)
+
+#__python_ex151
+#__program_dict
+
+eights = ["Alan Po", "Charlz Dickens"]
+nines  = ["Hemenguei", "Fitzjerald", "Oruell"]
+
+authors = (eights, nines)
+print(authors)
+
+#__python_ex152
+#__program_dict
+
+bday = {"Hemenguei":"21.07.1899","Fitzjerald":"24.09.1896"}
+
+my_list = [bday]
+print(my_list)
+my_tuple = (bday,)
+print(my_tuple)
+
+#__python_ex153
+#__program_dict
+
+ru = {"loc":(55.7522,37.6155),
+      "man":["Andrey Zvagincev","Yru Bykov","Petr Buslov"],
+      "facts":{"city":"Moscow", "country":"Russia"}}
