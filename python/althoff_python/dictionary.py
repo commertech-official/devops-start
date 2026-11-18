@@ -132,3 +132,22 @@ print(my_tuple)
 ru = {"loc":(55.7522,37.6155),
       "man":["Andrey Zvagincev","Yru Bykov","Petr Buslov"],
       "facts":{"city":"Moscow", "country":"Russia"}}
+
+#__homework
+#__task_1_list_lover_musicians
+
+list_musician = ["Slipknot","Archgoat","Mayhem","Burzum","Avsky"]
+print(list_musician)
+
+#__task_2_cortezh
+spare = [("spare_1", 55.7522, 37.6155),
+         ("spare_2", 45.7843, 87.2525),
+         ("spare_3", 65.7873, 46.2505)]
+print(spare)
+
+#__task_2_dicitionary_of_me
+of_me = {"name": "dial",
+         "rost": "180",
+         "love_color": "black",
+         "love_actor": "rivz"}
+print(of_me)
